@@ -1,0 +1,193 @@
+/* General Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* LOGIN PAGE */
+.login-box {
+    width: 320px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-box .logo {
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #c71585; /* Magenta */
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box .remember {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 14px;
+}
+
+.login-box button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #c71585;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #a0136e;
+}
+
+.login-box .forgot {
+    display: block;
+    margin-top: 15px;
+    color: #c71585;
+    text-decoration: none;
+}
+
+.login-box .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* DASHBOARD PAGE */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #c71585;
+    color: white;
+    position: fixed;
+    padding-top: 20px;
+}
+
+/* Main title: MySolace */
+.sidebar h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+/* Small tagline below MySolace */
+.sidebar .tagline {
+    text-align: center;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: #ffe6f7;
+}
+
+/* Small separator line */
+.sidebar hr {
+    width: 70%;
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #a0136e;
+    border-radius: 5px;
+}
+
+.main {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.main h2 {
+    color: #c71585;
+}
+
+.note {
+    background-color: #ffe6f0;
+    border-left: 5px solid #c71585;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* QUICK ACCESS */
+.quick-access {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Larger square cards */
+.quick-access .card {
+    background-color: #fce4f0;
+    border: 1px solid #c71585;
+    border-radius: 15px;
+    padding: 80px;                /* increased size */
+    width: 250px;                 /* increased size */
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Icons inside cards */
+.quick-access .card i {
+    font-size: 70px;              /* bigger icon */
+    margin-bottom: 40px;
+    color: #c71585;
+}
+
+.quick-access .card:hover {
+    background-color: #f9d6e6;
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .sidebar h1 {
+        font-size: 22px;
+    }
+
+    .sidebar .tagline {
+        font-size: 10px;
+    }
+
+    .quick-access .card {
+        width: 180px;
+        padding: 60px;
+    }
+
+    .quick-access .card i {
+        font-size: 50px;
+    }
+}
